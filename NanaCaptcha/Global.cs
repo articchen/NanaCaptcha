@@ -16,7 +16,6 @@ public class Global
     /// <returns>Encrypted string in BASE64</returns>
     public static string XOREncrypt(string input, string key)
     {
-        //把input用xor加密
         byte[] inputBytes = Encoding.UTF8.GetBytes(input);
         byte[] keyBytes = Encoding.UTF8.GetBytes(key);
         byte[] outputBytes = new byte[inputBytes.Length];
