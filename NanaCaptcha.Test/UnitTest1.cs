@@ -17,7 +17,7 @@ public class Tests
         var result = captcha.Captcha();
         //Convert Result to captchaResponse
         var response = JsonConvert.DeserializeObject<captchaResponse>(result);
-        var captchaText = captcha.XORDecrypt(response.captcha!,"Nana");
+        var captchaText = Global.XORDecrypt(response.captcha!,Global.XORKey);
         var request = new captchaRequest()
         {
             captcha = response.captcha,
