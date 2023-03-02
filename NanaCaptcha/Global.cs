@@ -4,7 +4,7 @@ namespace NanaCaptcha;
 
 public class Global
 {
-    public const string XORKey = "Nana"; 
+    public const string XORKey = "Nanana"; 
     
     //--------------------------------------
     // XOREncrypt
