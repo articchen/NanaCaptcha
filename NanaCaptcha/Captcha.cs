@@ -1,12 +1,12 @@
 namespace NanaCaptcha;
 
-public class WeatherForecast
+public class captchaRequest
 {
-    public DateOnly Date { get; set; }
-
-    public int TemperatureC { get; set; }
-
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-
-    public string? Summary { get; set; }
+    public string? captcha { get; set; }
+    public string? input { get; set; }
+}
+public class captchaResponse
+{
+    public string? captcha { get; set; }
+    public string? base64 { get; set; }
 }
